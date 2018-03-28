@@ -1,0 +1,59 @@
+/* BODY and HTML */
+
+body, html {
+    height: 100%;
+}
+
+html {
+  background-image: url(images/mishi.jpg);
+  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+    color:white;
+    font-family: Helvetica;
+    font-size:65px;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+/* NAV BAR */
+
+ul {
+    list-style-type: none;
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    border-right:1px;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #F5DEB3;
+    opacity: .5;
+}
