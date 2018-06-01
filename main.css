@@ -1,21 +1,22 @@
 /* BODY and HTML */
 
-body, html {
+body,
+html {
     height: 100%;
 }
 
 html {
-  background-image: url(images/mishi.jpg);
-  height:100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* background-image: url(images/mishi.jpg); */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
-    color:white;
-    font-family: Helvetica;
-    font-size:65px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 65px;
     left: 0;
     line-height: 200px;
     margin: auto;
@@ -26,34 +27,160 @@ h1 {
     text-align: center;
 }
 
-/* NAV BAR */
+/* Parallax */
 
-ul {
-    list-style-type: none;
-    font-family: Helvetica;
+body,
+html {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
 }
 
-li {
-    float: left;
-    border-right:1px;
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-li:last-child {
-    border-right: none;
+.bgimg-1 {
+    background-image: url("images/mishi.jpg");
+    min-height: 100%;
 }
 
-li a {
-    display: block;
-    color: white;
+.bgimg-2 {
+    background-image: url(images/prayer.jpg);
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("images/botanical.jpg");
+    min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    color: #000;
 }
 
-li a:hover:not(.active) {
-    background-color: #F5DEB3;
-    opacity: .5;
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/* Flexbox containers */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/* Project images */
+
+.project-img {
+    height: 170px;
+    width: 300px;
+}
+
+h5 {
+    font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding-bottom: 12px;
+}
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
