@@ -6,9 +6,7 @@
 <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,6 +69,7 @@
                     <h5>Built on Rails</h5>
                     <h5>Pamela's Panel is allows the administrator to create, read, edit, and delete courses, cohorts, instructors,
                         and students.</h5>
+                    <h5>username: test@test.com password: test123</h5>
                 </div>
             </div>
         </div>
@@ -84,47 +83,74 @@
 
     <div style="position:relative;">
         <div style="color:#777;background-color:whitesmoke;text-align:center;padding:50px 80px;text-align: center;">
-            <!-- Trigger/Open The Modal -->
 
-            <button id="myBtn">RESUME</button>
+            <div class="flex-container">
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
+                <div>
                     <p>
-                        WEB DEVELOPMENT EXPERIENCE R-UMBLR Ruby, JavaScript, AJAX, Bootstrap An architectural blog app that allows a user to create
-                        and edit posts about architecture and update using AJAX calls. PAMELA’S PANEL Ruby, JavaScript, AJAX,
-                        Bootstrap A full-stack admin panel app created for an admin user to be able to create, read, update,
-                        and destroy instructors, students, courses, and cohorts. FRIENDLY BAKERY Ruby, Sinatra, CSS, JavaScript
-                        A full-stack bakery website that displays information on baked goods for sale and enables a user
-                        to receive a catalog via email. WORK EXPERIENCE DEPARTMENT OF EDUCATION, SUBSTITUTE TEACHER September
-                        2016-Present NEW YORK JUNIOR TENNIS AND LEARNING, SCIENCE ACTIVITY SPECIALIST January 2013-March
-                        2018 Created lesson plans using hands-on learning techniques and experiments. USA STUDIOS, ASSISTANT
-                        TO ACCOUNTS PAYABLE/RECEIVABLE December 2008-August 2009 Assisted with A/P and A/R. Worked closely
-                        with programmers in creating a more efficient software to collect data and centralize all financial
-                        documentation by providing feedback. SUNY DOWNSTATE MEDICAL CENTER, RESEARCH ANALYST May 2008-December
-                        2009 Performed in-depth analysis of professional and academic research using SAS programming and
-                        SQL. Collected data using SNAP Professional, GME Tracking and AMA research. SUNY DOWNSTATE MEDICAL
-                        CENTER, INFORMATION TECHNOLOGY December 2006-May 2008 Worked with IT in the Department of Student
-                        Affairs for software and hardware support. Created the institution’s student website using Dreamweaver.
-                        TECHNICAL SKILLS RUBY ON RAILS MYSQL SASS JAVASCRIPT JQUERY POSTGRESQL API EDUCATION New York Code
-                        and Design Academy, New York, NY Certification: Web Development John Jay College of Criminal Justice,
-                        New York, NY Dual Degree: Forensic Psychology and Criminal Justice
+                        <h5>WEB DEVELOPMENT EXPERIENCE</h5>
+                        <h5>R-UMBLR </h5>
+                        <h5>Ruby, JavaScript, AJAX, Bootstrap An architectural blog app that allows a user to create and edit
+                            posts about architecture and update using AJAX calls</h5>
+                        <h5>PAMELA’S PANEL</h5>
+                        <h5>Ruby, JavaScript, AJAX, Bootstrap A full-stack admin panel app created for an admin user to be able
+                            to create, read, update, and destroy instructors, students, courses, and cohorts</h5>
+                        <h5>FRIENDLY BAKERY</h5>
+                        <h5>Ruby, Sinatra, CSS, JavaScript A full-stack bakery website that displays information on baked goods
+                            for sale and enables a user to receive a catalog via email</h5>
+                        <h5>BEING BLACK IN AMERICA</h5>
+                        <h5>Ruby, Sinatra, CSS, JavaScript A full-stack bakery website that displays information on baked goods
+                            for sale and enables a user to receive a catalog via email</h5>
 
-                    </p>
                 </div>
+                <div>
+                    <p>
+                        <h5>WORK EXPERIENCE</h5>
+                        <h5>
+                            <ul>Department of Education, Substitute Teacher</ul>
+                            <ul>September 2016-Present</ul>
+                            <ul>New York Junior Tennis and Learning, STEM Activity Specialist</ul>
+                            <ul>January 2013-March 2018</ul>
+                            Created lesson plans using hands-on learning techniques and experiments
+                            <ul>USA Studios, Assistant to Accounts Payable/Receivable</ul>
+                            <ul>December 2008-August 2009</ul>
+                            <ul>SUNY Downstate Medical Center, Research Analyst</ul>
+                            <ul>May 2008-December 2009</ul>
+                            <ul>SUNY DOWNSTATE MEDICAL CENTER, INFORMATION TECHNOLOGY</ul>
+                            <ul>December 2006-May 2008 Worked with IT in the Department of Student</ul>
+                    </p>
+                    </h5>
+                </div>
+                <div>
+                    <p>
+                        <h5>TECHNICAL SKILLS</h5>
+                        <h5>Ruby on Rails</h5>
+                        <h5>Sass</h5>
+                        <h5>Javascript</h5>
+                        <h5>PostgreSQL</h5>
+                        <h5>API</h5>
+                        <h5>EDUCATION</h5>
+                        <h5>
+                            <b>New York Code and Design Academy</b>
+                        </h5>
+                        <h5>Certification: Web Development</h5>
+                        <h5>
+                            <b>John Jay College of Criminal Justice</b>
+                        </h5>
+                        <h5>Dual Degree: Forensic Psychology and Criminal Justice</h5>
 
+                </div>
             </div>
-            <p>Resume linked here (or maybe actual resume? Hmm...</p>
+
+
         </div>
     </div>
 
     <div class="bgimg-1">
         <div class="caption">
-            <span class="border">SOCIAL MEDIA LINKS HERE</span>
+            <span class="border">
+                <a href="https://www.linkedin.com/in/mashalazhar/" target="_blank">CONTACT ME ON LINKEDIN</a>
+            </span>
         </div>
     </div>
 
@@ -136,7 +162,8 @@
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 
